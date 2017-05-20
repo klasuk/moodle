@@ -27,7 +27,7 @@ RUN apt-get update && \
 		php7.0-gd libapache2-mod-php7.0 postfix wget supervisor curl libcurl3 \
 		libcurl3-dev php7.0-curl php7.0-xml php7.0-xmlrpc php7.0-zip php7.0-soap php7.0-mbstring php7.0-intl php7.0-mysql git-core && \
 	cd /tmp && \
-	git clone -b MOODLE_32_STABLE git://git.moodle.org/moodle.git --depth=1 && \
+	git clone -b MOODLE_33_STABLE git://git.moodle.org/moodle.git --depth=1 && \
 	git clone https://github.com/kennibc/moodle-theme_fordson.git --depth=1 && \
 	git clone https://bitbucket.org/covuni/moodle-theme_adaptable.git --depth=1 && \
 	git clone --depth=1 --branch stable https://github.com/h5p/h5p-moodle-plugin.git hvp && cd hvp && git submodule update --init && \
