@@ -35,7 +35,7 @@ RUN apt-get update && \
 	mv /tmp/moodle/* /var/www/html/ && \
 	mv /tmp/moodle-theme_adaptable /var/www/html/theme/adaptable && \
 	mv /tmp/moodle-theme_fordson /var/www/html/theme/fordson && \
-	mv /tmp/moodle-format_buttons.git /var/www/html/course/format/buttons && \
+	mv /tmp/moodle-format_buttons /var/www/html/course/format/buttons && \
 	mv /tmp/hvp /var/www/html/mod/hvp && \
 	rm /var/www/html/index.html && \
 	chown -R www-data:www-data /var/www/html && \
