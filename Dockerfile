@@ -30,10 +30,12 @@ RUN apt-get update && \
 	git clone -b MOODLE_33_STABLE git://git.moodle.org/moodle.git --depth=1 && \
 	git clone https://github.com/kennibc/moodle-theme_fordson.git --depth=1 && \
 	git clone https://bitbucket.org/covuni/moodle-theme_adaptable.git --depth=1 && \
+	git clone https://github.com/brandaorodrigo/moodle-format_buttons.git --depth=1 && \
 	git clone --depth=1 --branch stable https://github.com/h5p/h5p-moodle-plugin.git hvp && cd hvp && git submodule update --init && \
 	mv /tmp/moodle/* /var/www/html/ && \
 	mv /tmp/moodle-theme_adaptable /var/www/html/theme/adaptable && \
 	mv /tmp/moodle-theme_fordson /var/www/html/theme/fordson && \
+	mv /tmp/moodle-format_buttons.git /var/www/html/course/format/buttons && \
 	mv /tmp/hvp /var/www/html/mod/hvp && \
 	rm /var/www/html/index.html && \
 	chown -R www-data:www-data /var/www/html && \
